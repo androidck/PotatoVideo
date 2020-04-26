@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_tv_label"
+    android:layout_width="wrap_content"
+    android:layout_height="28dp"
+    android:layout_marginLeft="6dp"
+    android:background="@drawable/shape_item_label_bg"
+    android:gravity="center"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:text="#自拍"
+    android:textColor="@android:color/white"
+    android:textSize="13sp" />

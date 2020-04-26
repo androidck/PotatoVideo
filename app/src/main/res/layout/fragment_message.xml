@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/main_bottom_height">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:background="@color/background"
+            android:gravity="center_horizontal"
+            android:paddingTop="30dp"
+            android:text="@string/message"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btn_add_user"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="3dp"
+            android:onClick="backClick"
+            android:padding="7dp"
+            android:src="@mipmap/icon_msg_add" />
+
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="人气热榜"
+        android:textColor="@android:color/white"
+        android:textSize="15dp"
+        android:drawableLeft="@mipmap/renqi"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:drawablePadding="8dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/head_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:background="@color/black1"
+        android:orientation="horizontal">
+
+        <com.mibai.phonelive.custom.ImageTextView
+            android:id="@+id/btn_fans"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:imageMarginTop="10dp"
+            app:imageSrc="@mipmap/icon_msg_fans"
+            app:imageWidth="50dp"
+            app:text1="@string/fans"
+            app:textColor1="#fff"
+            app:textHeight="20dp"
+            app:textMarginTop="8dp"
+            app:textSize1="14sp" />
+
+        <com.mibai.phonelive.custom.ImageTextView
+            android:id="@+id/btn_zan"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:imageMarginTop="10dp"
+            app:imageSrc="@mipmap/icon_msg_zan"
+            app:imageWidth="50dp"
+            app:text1="@string/zan"
+            app:textColor1="#fff"
+            app:textHeight="20dp"
+            app:textMarginTop="8dp"
+            app:textSize1="14sp" />
+
+        <com.mibai.phonelive.custom.ImageTextView
+            android:id="@+id/btn_at"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:imageMarginTop="10dp"
+            app:imageSrc="@mipmap/icon_msg_at"
+            app:imageWidth="50dp"
+            app:text1="@string/at_me"
+            app:textColor1="#fff"
+            app:textHeight="20dp"
+            app:textMarginTop="8dp"
+            app:textSize1="14sp" />
+
+        <com.mibai.phonelive.custom.ImageTextView
+            android:id="@+id/btn_comment"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            app:imageMarginTop="10dp"
+            app:imageSrc="@mipmap/icon_msg_comment"
+            app:imageWidth="50dp"
+            app:text1="@string/comment"
+            app:textColor1="#fff"
+            app:textHeight="20dp"
+            app:textMarginTop="8dp"
+            app:textSize1="14sp" />
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never" />
+
+
+</LinearLayout>

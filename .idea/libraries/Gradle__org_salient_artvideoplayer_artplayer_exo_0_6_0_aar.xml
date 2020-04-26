@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: org.salient.artvideoplayer:artplayer-exo:0.6.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b025a6ee6caeaf820f02465f815b54da/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b025a6ee6caeaf820f02465f815b54da/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.salient.artvideoplayer/artplayer-exo/0.6.0/b59884f3d64a551a109ffce68d1b5f3644403f66/artplayer-exo-0.6.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.salient.artvideoplayer/artplayer-exo/0.6.0/d3edd38b1838ff58997fda62f96debf1f6138316/artplayer-exo-0.6.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

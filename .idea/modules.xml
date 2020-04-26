@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CRDouYin.iml" filepath="$PROJECT_DIR$/CRDouYin.iml" group="CRDouYin" />
+      <module fileurl="file://$PROJECT_DIR$/PotatoVideo.iml" filepath="$PROJECT_DIR$/PotatoVideo.iml" group="PotatoVideo" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="PotatoVideo/app" />
+      <module fileurl="file://$PROJECT_DIR$/artplayer-java/artplayer-java.iml" filepath="$PROJECT_DIR$/artplayer-java/artplayer-java.iml" group="PotatoVideo/artplayer-java" />
+      <module fileurl="file://$PROJECT_DIR$/artplayer-ui/artplayer-ui.iml" filepath="$PROJECT_DIR$/artplayer-ui/artplayer-ui.iml" group="PotatoVideo/artplayer-ui" />
+      <module fileurl="file://$PROJECT_DIR$/beauty/beauty.iml" filepath="$PROJECT_DIR$/beauty/beauty.iml" group="PotatoVideo/beauty" />
+      <module fileurl="file://$PROJECT_DIR$/jpush/jpush.iml" filepath="$PROJECT_DIR$/jpush/jpush.iml" group="PotatoVideo/jpush" />
+      <module fileurl="file://$PROJECT_DIR$/sharedsdk/sharedsdk.iml" filepath="$PROJECT_DIR$/sharedsdk/sharedsdk.iml" group="PotatoVideo/sharedsdk" />
+      <module fileurl="file://$PROJECT_DIR$/video/video.iml" filepath="$PROJECT_DIR$/video/video.iml" group="PotatoVideo/video" />
+    </modules>
+  </component>
+</project>

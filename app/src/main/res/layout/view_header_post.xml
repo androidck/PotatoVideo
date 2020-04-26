@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/ed_content"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_260"
+        android:layout_marginTop="@dimen/space_40"
+        android:background="@android:color/white"
+        android:gravity="top"
+        android:hint="说点什么呢....（正文不少于六个字）"
+        android:paddingLeft="@dimen/space_24"
+        android:paddingRight="@dimen/space_24"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/font_size_30px" />
+
+    <com.zhy.autolayout.AutoLinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/space_24"
+            android:layout_marginRight="@dimen/space_24"
+            android:overScrollMode="never" />
+    </com.zhy.autolayout.AutoLinearLayout>
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未开启定位"
+        android:drawableLeft="@mipmap/icon_location"
+        android:gravity="bottom"
+        android:layout_marginLeft="@dimen/space_24"
+        android:layout_marginRight="@dimen/space_24"
+        android:drawablePadding="@dimen/space_16"
+        android:layout_marginBottom="@dimen/space_50"
+        android:layout_marginTop="@dimen/space_60"
+        android:textColor="@color/colorDeep" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="请选择本内容合适的圈子"
+        android:gravity="bottom"
+        android:layout_marginLeft="@dimen/space_24"
+        android:layout_marginRight="@dimen/space_24"
+        android:layout_marginBottom="@dimen/space_50"
+        android:textColor="@color/colorDeep" />
+</com.zhy.autolayout.AutoLinearLayout>
