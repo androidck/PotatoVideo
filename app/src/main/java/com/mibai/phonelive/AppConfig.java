@@ -24,7 +24,7 @@ public class AppConfig {
     private static final String TAG = "AppConfig";
 
     //域名 http://douying.qgnix.cn shipin.xinshizaixian.com http://lds99.cc http://libai16.com
-    public static final String HOST = "http://14.192.8.68";
+    public static final String HOST = "http://47.75.166.210";
 
     public static final String FILE_PROVIDER = "com.mibai.phonelive.fileprovider";
 

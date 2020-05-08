@@ -1,11 +1,11 @@
 <component name="libraryTable">
   <library name="Gradle: com.yanzhenjie:recyclerview-swipe:1.1.4@aar">
     <ANNOTATIONS>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9af757eab2df024738d91d18e8c64012/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e96016ec13235dbb52a3155f49489ea1/annotations.zip!/" />
     </ANNOTATIONS>
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9af757eab2df024738d91d18e8c64012/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9af757eab2df024738d91d18e8c64012/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e96016ec13235dbb52a3155f49489ea1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e96016ec13235dbb52a3155f49489ea1/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>

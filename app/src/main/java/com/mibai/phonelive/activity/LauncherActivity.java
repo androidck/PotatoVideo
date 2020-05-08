@@ -3,6 +3,7 @@ package com.mibai.phonelive.activity;
 import android.content.Intent;
 import android.os.Handler;
 import android.text.TextUtils;
+import android.util.Log;
 
 import com.alibaba.fastjson.JSON;
 import com.mibai.phonelive.AppConfig;
@@ -27,7 +28,7 @@ import static com.mibai.phonelive.http.HttpUtil.GET_AD_LIST;
 /**
  * 启动页面
  */
-public class LauncherActivity extends AbsActivity implements ListenerManger.ImageDownLoadCallBack{
+public class LauncherActivity extends AbsActivity implements ListenerManger.ImageDownLoadCallBack {
 
     private Handler mHandler;
     private AdvertiseBean mAdvertiseBean;
@@ -90,6 +91,8 @@ public class LauncherActivity extends AbsActivity implements ListenerManger.Imag
                 .tag(GET_AD_LIST).execute(new StringCallback() {
             @Override
             public void onSuccess(Response<String> response) {
+                String datas = JsonUtils.getResponseByKey(response.body(), "data");
+                Log.d("dasdasd", datas);
                 int ret = JsonUtils.getResponseIntByKey(response.body(), "ret");
                 if (ret == 200) {
                     String data = JsonUtils.getResponseByKey(response.body(), "data");

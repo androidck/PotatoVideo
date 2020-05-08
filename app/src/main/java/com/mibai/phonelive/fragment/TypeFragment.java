@@ -61,10 +61,10 @@ public class TypeFragment extends AbsFragment {
     @BindView(R.id.recyclerView)
     SwipeMenuRecyclerView recyclerView;
 
-    private RecyclerView headRecyclerView, today_hot_recyclerView, today_zan_recyclerView;
-    private TodayHotAndZanAdapter hotAdapter, zanAdapter;
+    private RecyclerView headRecyclerView, today_hot_recyclerView;
+    private TodayHotAndZanAdapter hotAdapter;
     private List<VideoBean> hotEntries = new ArrayList<>();
-    private List<VideoBean> zanEntries = new ArrayList<>();
+
 
     private List<TypeHeadBean> headBeanList = new ArrayList<>();
     private List<TypeEntry> list = new ArrayList<>();
@@ -132,7 +132,7 @@ public class TypeFragment extends AbsFragment {
         });
         // 今日最热
         today_hot_recyclerView = headView.findViewById(R.id.today_hot_recyclerView);
-        LinearLayoutManager todayHotManager = new LinearLayoutManager(getActivity());
+        GridLayoutManager todayHotManager = new GridLayoutManager(getActivity(), 3);
         todayHotManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         today_hot_recyclerView.setLayoutManager(todayHotManager);
         hotAdapter = new TodayHotAndZanAdapter(mContext, hotEntries);
@@ -145,20 +145,6 @@ public class TypeFragment extends AbsFragment {
             }
         });
 
-        // 点赞最多
-        today_zan_recyclerView = headView.findViewById(R.id.today_zan_recyclerView);
-        LinearLayoutManager todayZanManager = new LinearLayoutManager(getActivity());
-        todayZanManager.setOrientation(LinearLayoutManager.HORIZONTAL);
-        today_zan_recyclerView.setLayoutManager(todayZanManager);
-        zanAdapter = new TodayHotAndZanAdapter(mContext, zanEntries);
-        today_zan_recyclerView.setAdapter(zanAdapter);
-        zanAdapter.setOnItemClickListener(new TodayHotAndZanAdapter.OnItemClickListener() {
-            @Override
-            public void onClick(int position) {
-                VideoBean bean = hotEntries.get(position);
-                VideoPlayActivity.forwardSingleVideoPlay(mContext, bean);
-            }
-        });
 
         adapter = new TypeAdapter(getActivity(), list);
         recyclerView.setAdapter(adapter);
@@ -290,19 +276,10 @@ public class TypeFragment extends AbsFragment {
         OkHttp.getAsync(HTTP_URL + "service=Video.HotVideolist", new OkHttp.DataCallBack() {
             @Override
             public void requestSuccess(String result) throws Exception {
-                JsonObject jsonObject = new JsonParser().parse(result).getAsJsonObject();
-                JsonObject data = jsonObject.getAsJsonObject("data");
-                JsonObject info = data.getAsJsonObject("info");
-                JsonArray hotArray = info.getAsJsonArray("hot");
-                JsonArray zanArray = info.getAsJsonArray("zan");
-                List<VideoBean> hotList = new Gson().fromJson(hotArray.toString(), new TypeToken<List<VideoBean>>() {
-                }.getType());
-                List<VideoBean> zanList = new Gson().fromJson(zanArray.toString(), new TypeToken<List<VideoBean>>() {
-                }.getType());
-                hotEntries.addAll(hotList);
-                zanEntries.addAll(zanList);
+
+
                 hotAdapter.notifyDataSetChanged();
-                zanAdapter.notifyDataSetChanged();
+
             }
 
             @Override

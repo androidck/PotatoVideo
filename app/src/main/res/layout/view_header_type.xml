@@ -3,12 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
-    <com.youth.banner.Banner
-        android:id="@+id/banner"
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_margin="10dp"
-        />
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
@@ -20,18 +15,21 @@
         android:layout_marginLeft="12dp"
         android:layout_marginRight="12dp"
         android:drawablePadding="8dp"
-        android:visibility="gone"
         />
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/head_recyclerView"
         android:layout_width="match_parent"
-        android:visibility="gone"
         android:layout_height="wrap_content"/>
+    <com.youth.banner.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:text="今日最热"
-        android:visibility="gone"
+        android:text="热榜"
         android:textColor="@android:color/white"
         android:textSize="15dp"
         android:drawableLeft="@mipmap/renqi"
@@ -40,28 +38,10 @@
         android:layout_marginRight="12dp"
         android:drawablePadding="8dp"
         />
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/today_zan_recyclerView"
-        android:layout_width="match_parent"
-        android:visibility="gone"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="40dp"
-        android:text="最多点赞"
-        android:visibility="gone"
-        android:textColor="@android:color/white"
-        android:textSize="15dp"
-        android:drawableLeft="@mipmap/renqi"
-        android:gravity="center_vertical"
-        android:layout_marginLeft="12dp"
-        android:layout_marginRight="12dp"
-        android:drawablePadding="8dp"
-        />
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/today_hot_recyclerView"
         android:layout_width="match_parent"
-        android:visibility="gone"
         android:layout_height="wrap_content"/>
     <TextView
         android:layout_width="match_parent"

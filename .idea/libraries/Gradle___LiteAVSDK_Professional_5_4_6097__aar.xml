@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: :LiteAVSDK_Professional_5.4.6097:@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f54d5f7e7a09bd1d1285d3fd71090a4/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f54d5f7e7a09bd1d1285d3fd71090a4/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f54d5f7e7a09bd1d1285d3fd71090a4/jars/libs/LiteAVSDK_Professional.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/451f57446a78d9068dba356470d70953/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/451f57446a78d9068dba356470d70953/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/451f57446a78d9068dba356470d70953/jars/libs/LiteAVSDK_Professional.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
